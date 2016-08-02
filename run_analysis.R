@@ -4,7 +4,8 @@ variablesNames<-read.table("features.txt") #read in the variable names
 vecNames<-as.vector(variablesNames[,2]) 
 actLab<-read.table("activity_labels.txt") #read in activity names
 actNames<-as.vector(actLab[,2])
-
+vec<-read.table("activity_labels.txt")
+vec<-as.vector(vec[,2])
 
 setwd("~/Dropbox/Coursera/UCI HAR Dataset/test")
 
